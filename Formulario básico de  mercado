@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de compra</title>
+        <style>
+            body{
+                background-color:wheat ;
+                color:rgb(39, 39, 39) ;
+                font:oblique 22pt raleway;
+                }
+            h1{
+                color:black;
+                font:normal Marriweather;
+            }
+        </style>
+
+    </head>
+<body>
+    <h1>Valor da Compra</h1>
+    <p>
+        <script>
+            var n1= Number(prompt('Quantos fardos de refrigerante de 2 litros?'))
+            var n2= Number(prompt('Quantos kilos de carne?'))
+            var n3= Number(prompt('Quantos pães?'))
+            var jun1= n1*11.99
+            var jun2= n2*9.98
+            var jun3= n3*0.30
+            var tot= jun1+jun2+jun3
+            document.write('Preço do refrigerante:'+ jun1.toLocaleString('pt-br', {style:'currency', currency: 'BRL'}))
+        </script>  
+        <br><script> 
+            document.write('Preço da carne:'+jun2.toLocaleString('pt-br', {style:'currency', currency: 'BRL'}))
+        </script> 
+       <br><script>
+            document.write('Preço do pão:'+jun3.toLocaleString('pt-br', {style:'currency', currency: 'BRL'}))
+        </script>
+        <br><script>
+            document.write('Preço da comida:' + tot.toLocaleString('pt-br', {style:'currency', currency: 'BRL'}))
+            alert('Obrigado pela compra!')
+        </script>
+    </p>
+
+</body>
+</html>
