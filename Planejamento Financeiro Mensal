@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planilha de Lucro</title>
+
+    <style>
+        body{
+            background-color:rgb(255, 223, 41) ;
+            color: rgb(46, 46, 46);
+            font: oblique 18pt calibri;
+        }
+        h1{
+            color: black;
+            font:normal 40pt merriweather;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Planilha de Gastos Semanais</h1>
+<p> <script>
+            var nome=prompt('Qual o seu nome?')
+            var v1=Number(prompt('Quanto gasta com aluguel?'))
+            var v2=Number(prompt('Quanto gasta com comida?'))
+            var v3=Number(prompt('Quanto gasta com transporte?'))
+            var v4=Number(prompt('Quanto gasta com Net?'))
+            var v5=Number(prompt('Quanto gasta com Energia e Água?'))
+            var v6=Number(prompt('Quanto tem em gastos adicionais?'))
+            var v7=Number(prompt('Qual o seu salário?'))
+            var som1=v4+v5
+            var som2=v1+v2+v3+v4+v5+v6
+            var som3=v7-som2
+    </script>
+    <h2 id="tagh1">Nome:</h2>    
+        <script>
+        tagh1.innerHTML='Nome:'+nome    
+            document.write('Moradia:'+v1.toLocaleString('pt-br', {style:'currency', currency:'BRL'}))
+        </script>
+<br>    <script>
+            document.write('Alimentação:'+v2.toLocaleString('pt-br', {style:'currency', currency:'BRL'}))
+        </script>
+<br>    <script>
+            document.write('Locomoção:'+v3.toLocaleString('pt-br', {style:'currency', currency:'BRL'}))
+        </script>   
+<br>    <script> 
+            document.write('Gastos Básicos:'+som1.toLocaleString('pt-br', {style:'currency', currency:'BRL'}))
+    
+        </script>
+<br>    <script>
+            document.write('Gastos Adicionais:'+v6.toLocaleString('pt-br', {style:'currency', currency:'BRL'})) 
+        </script>
+<br>    <script>
+            document.write('Dinheiro para investimento:'+som3.toLocaleString('pt-br', {style:'currency', currency:'BRL'}))
+        </script>
+</p>
+</body>
+</html>
